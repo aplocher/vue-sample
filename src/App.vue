@@ -25,34 +25,31 @@ export default {
   computed: {
     getContacts() {
       return [
-			{
-				firstName: 'Adam',
-				lastName: 'Plocher',
-				isActive: true,
-				phoneNumbers: [
-					{
-						type: 'mobile',
-						value: '916-555-1212'
-					}
-				],
-				emailAddresses: [
-					{
-						type: 'personal',
-						value: 'test@email.com'
-					}
-				]
-			},
-			{
-				firstName: 'Jane',
-				lastName: 'Doe',
-				isActive: true
-			},
-			{
-				firstName: 'John',
-				lastName: 'Doe',
-				isActive: false
-			}
-		]
+        {
+          id: 1,
+          isActive: true,
+          firstName: "Adam",
+          lastName: "Plocher",
+          phone: "916-555-5555",
+          email: "test@email.com"
+        },
+        {
+          id: 2,
+          isActive: true,
+          firstName: "Jane",
+          lastName: "Doe",
+          phone: "222-222-2222",
+          email: "jane@doe.com"
+        },
+        {
+          id: 3,
+          isActive: false,
+          firstName: "John",
+          lastName: "Doe",
+          phone: "111-111-1111",
+          email: "john@doe.com"
+        }
+      ];
     }
   }
 };
