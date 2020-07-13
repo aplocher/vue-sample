@@ -1,5 +1,8 @@
 <template>
-  <b-list-group-item href="#">
+  <b-list-group-item
+    href="#"
+    @click="getClick(contact)"
+  >
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">
         {{ contact.firstName }} {{ contact.lastName }}
@@ -23,6 +26,11 @@ export default {
       default: function() {
         return null;
       }
+    }
+  },
+  methods: {
+    getClick(item) {
+      alert(item.firstName);
     }
   }
 };

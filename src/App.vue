@@ -7,7 +7,7 @@
       <p>A vue.js demo to get a handle on vue.js. Includes <b>Bootstrap</b> and <b>Webpack</b></p>
       <b-btn
         variant="primary"
-        href="http://www.github.com"
+        href="https://github.com/aplocher/vue-sample"
       >
         Github Link
       </b-btn>

@@ -3,8 +3,8 @@
     <b-list-group>
       <contact-list-item
         v-for="c in contacts"
-        v-bind:key="c.id"
-        v-bind:contact="c"
+        :key="c.id"
+        :contact="c"
       />
     </b-list-group>
   </div>
