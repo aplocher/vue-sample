@@ -1,7 +1,8 @@
 <template>
   <b-list-group-item
+    v-b-modal="'modal-1'"
     href="#"
-    @click="getClick(contact)"
+    @click="selectContact(contact)"
   >
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">
@@ -29,8 +30,8 @@ export default {
     }
   },
   methods: {
-    getClick(item) {
-      alert(item.firstName);
+    selectContact(contact) {
+      this.$emit("selected-contact-changed", contact);
     }
   }
 };
